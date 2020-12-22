@@ -10,23 +10,25 @@ import { Timer } from "./components/Timer";
 import { Timer2 } from "./components/Timer2";
 import { Timer2Solve } from "./components/Timer2Solve";
 import { Timer2SolveAlt } from "./components/Timer2SolveAlt";
+import { Timer3SolveAlt } from "./components/Timer3SolveAlt";
 import { RefsVsState } from "./components/RefsVsState";
 
 export default function App() {
   return (
     <div className="App">
       {/* <ClassComponent /> */}
+      {/* <FunctionComponent /> */}
       {/* <Rerender /> */}
       {/* <ClassRerender /> */}
-      {/* <FunctionComponent /> */}
       {/* <PokemonForm /> */}
+      {/* <PokemonClassForm /> */}
       {/* <Timer /> */}
       {/* <Timer2 /> */}
       {/* <Timer2Solve /> */}
       {/* <Timer2SolveAlt /> */}
-      {/* <PokemonClassForm /> */}
+      {/* <Timer3SolveAlt /> */}
 
-      <RefsVsState />
+      {/* <RefsVsState /> */}
     </div>
   );
 }
