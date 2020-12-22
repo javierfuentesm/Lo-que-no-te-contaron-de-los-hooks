@@ -17,6 +17,7 @@ export default class Pokemon extends Component {
     const style = { textTransform: "capitalize" };
     return (
       <div>
+        <h1>Usando Class Component</h1>
         {pokemon ? (
           <>
             <img

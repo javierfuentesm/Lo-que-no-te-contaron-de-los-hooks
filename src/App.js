@@ -5,6 +5,7 @@ import ClassRerender from "./components/ClassRerender.jsx";
 import { Rerender } from "./components/Rerender";
 import { FunctionComponent } from "./components/FunctionComponent";
 import { PokemonForm } from "./components/PokemonForm";
+import { PokemonClassForm } from "./components/PokemonClassForm";
 import { Timer } from "./components/Timer";
 import { Timer2 } from "./components/Timer2";
 import { Timer2Solve } from "./components/Timer2Solve";
@@ -14,7 +15,6 @@ import { RefsVsState } from "./components/RefsVsState";
 export default function App() {
   return (
     <div className="App">
-      <h1>Usando un ClassComponent</h1>
       {/* <ClassComponent /> */}
       {/* <Rerender /> */}
       {/* <ClassRerender /> */}
@@ -24,6 +24,8 @@ export default function App() {
       {/* <Timer2 /> */}
       {/* <Timer2Solve /> */}
       {/* <Timer2SolveAlt /> */}
+      {/* <PokemonClassForm /> */}
+
       <RefsVsState />
     </div>
   );

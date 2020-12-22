@@ -7,7 +7,7 @@ function Pokemon({ pokemonToGet }) {
       .then((res) => {
         setPokemon(res);
       });
-  }, [pokemonToGet]); // get a new pokemon with the pokemonToGet prop changes
+  }, [pokemonToGet]); // obtener un nuevo pokemon cuando la prop pokemonToGet cambia
   const style = { textTransform: "capitalize" };
   return (
     <div>
@@ -17,9 +17,9 @@ function Pokemon({ pokemonToGet }) {
             src={pokemon.sprites.front_default}
             alt={"Image of " + pokemon.name}
           />
-          <p style={style}>Name: {pokemon.name}</p>
+          <p style={style}>Nombre: {pokemon.name}</p>
           <p style={style}>
-            Type: {pokemon.types.map((x) => x.type.name).join(", ")}
+            Tipo: {pokemon.types.map((x) => x.type.name).join(", ")}
           </p>
         </>
       ) : (
@@ -42,7 +42,7 @@ export function PokemonForm() {
         value={inputValue}
         type="text"
       />
-      <button onClick={getPokemon}>Get Pokemon</button>
+      <button onClick={getPokemon}>Buscar Pokemon</button>
       <Pokemon pokemonToGet={pokemonToGet} />
     </div>
   );

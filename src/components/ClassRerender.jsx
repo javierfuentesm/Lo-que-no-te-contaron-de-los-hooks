@@ -4,12 +4,12 @@ export default class Classrerender extends Component {
   state = {
     bool: false
   };
-  randomNum = Math.random();
 
+  randomNum = Math.random();
   render() {
     return (
       <div>
-        <p>Este número random será diferente cada vez que le des clcik:</p>
+        <p>Este número random será igual cada vez que le des clcik:</p>
         <p>{this.randomNum}</p>
         <p>Estado de bool {`${this.state.bool}`}</p>
 
